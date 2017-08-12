@@ -1,9 +1,8 @@
-# -*- coding: utf8 -*-
 import group
 import group_id
 import user
 import sys
-'''Creates CSV file with Member ID,Member Name and Member Email ID for channel name passed in argument'''
+'''Creates CSV file with active Member ID,Member Name and Member Email ID for channel name passed in argument'''
 channel_name=sys.argv[1]
 channel_id=group_id.group_id(channel_name)
 group_detail_csv=open("group_detail.csv", 'w')
