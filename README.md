@@ -22,6 +22,13 @@ update SLACK_TOKEN in .env
 
 Run below from command line
 
-`python group_details_csv.py "channel name"`
+To get the active members list
+
+`python group_details_csv.py "<channel name>"`
+
+
+To get the deleted members list (attrition)
+
+`python attrition.py "<channel name>"`
 
 It will generate group_details.csv file which will have Member ID, Member Name and Email ID
