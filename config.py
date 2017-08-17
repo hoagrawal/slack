@@ -1,7 +1,7 @@
 
 def read_config(key):
     prop_file = open(".env", 'r')
-    # Read property key from property file
+    # Read property "key" value from property file
     for line in prop_file:
         if key in line:
             keyval = line.rstrip().split("=")[1]
